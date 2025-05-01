@@ -7,3 +7,5 @@
   studentemail= "spidy@gmail.com"
   studentroll= "22"
   console.log(studentid, studentemail, studentroll); 
+
+  /* we dont use var in the js because it has issue in block scope*/
