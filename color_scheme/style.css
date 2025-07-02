@@ -1,0 +1,32 @@
+.box{
+    margin: 15px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius:2rem;
+    color: white;
+}
+#red{
+
+    background-color: red;
+
+}
+#green{
+    background-color: green;
+
+}
+#blue{
+    background-color: blue;
+
+}
+#purple{
+    background-color:purple
+}
+#yellow{
+    background-color: yellow;
+}
+.container{
+    display:block;
+   
+    justify-content: center;
+    align-items: center;
+}
