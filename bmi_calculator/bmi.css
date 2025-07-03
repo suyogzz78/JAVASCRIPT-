@@ -1,0 +1,33 @@
+.container{
+    margin:15px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display:block;
+    background-color: #4357AD;
+    height:80vh;
+    width: 100vh;
+    
+}
+#bmiForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #48A9A6;
+    height:65vh;
+    width:95vh;
+    
+}
+#calculate{
+
+    padding: 10px 15px;
+    border-radius:5px;
+    background-color: #E4DFDA;
+}
+body{
+    background-color: #86BBD8;
+}
