@@ -23,4 +23,4 @@ document.getElementById("calculate").addEventListener("click", function() {
     }
 
     result.innerHTML=`Your BMI is ${bmi.toFixed(2)} and you are classified as ${category}.`;
-});
+});  

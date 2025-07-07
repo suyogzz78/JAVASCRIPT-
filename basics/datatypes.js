@@ -15,4 +15,4 @@ console.log(typeof name, typeof age, typeof isStudent, typeof studentid, typeof 
 
 
 
-
+              
