@@ -25,7 +25,7 @@ const mul=(a,b) => {
     return a*b;
 }
 const div =
-    ( x,  y)=>{
+    ( x,  y)=>{  
         return x%y;   
      }
-const add = (a,b) => a+b; //single line arrow function
+const add = (a,b) => (a+b); //single line arrow function
