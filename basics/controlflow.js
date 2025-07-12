@@ -6,7 +6,7 @@
   }
   const marks= 55;
   if(marks > 40)
-  {
+  { 
     const grade ="A";
     console.log(`congrats! you have got ${grade}`);
   }
