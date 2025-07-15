@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:grey ;">
+
+    
+</body>
+<script>
+    const divs= document.createElement('div');
+    console.log(divs);
+    divs.setAttribute('class', 'container');
+    divs.id = Math.round(Math.random()*10+1);
+    divs.style.backgroundColor = 'red';
+    divs.style.padding = '20px';
+    //divs.innerText = 'This is a dynamically created div';
+    const addtext = document.createTextNode('This is a text node');
+    divs.appendChild(addtext);
+    document.body.appendChild(divs);
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:grey ;">
+    <div class="parent">  
+    <div class="class">sun</div>
+    <div class="class">mon</div>
+    <div class="class">tues</div>
+    <div class="class">wed</div>
+      </div>
+</body>
+<script>
+    const parents= document.querySelector('.parent');
+   /* console.log(parents);
+    console.log(parents.children);
+    console.log(parents.children[1].innerText);*/
+
+    for (let index = 0; index < parents.children.length; index++) {//here parent.children is an HTMLCollection like array
+        
+        console.log(parents.children[index].innerText);
+    }
+    parents.children[0].style.color = "red";
+    console.log(parents.firstElementChild);
+    console.log(parents.lastElementChild);
+
+    const dayone= document.querySelector('.class');// this will select the first element with class 'class'
+    console.log(dayone);
+    console.log(dayone.parentElement); // this will give the parent element of the first 'class' element
+    console.log(dayone.nextElementSibling); // this will give the next sibling element of the first 'class' element
+    console.log("nodes:",parents.childNodes);// this will give all the child nodes including text nodes
+ 
+
+</script>
+
+</html>
