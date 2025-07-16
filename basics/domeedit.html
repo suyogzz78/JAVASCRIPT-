@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aquamarine;">
+    <ul class="language">
+        <li>JS</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(lang){
+        const li=document.createElement('li');
+        li.innerHTML=`the language is ${lang}`
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addlanguage("Python");
+
+    function addnlanguage(lang){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addnlanguage("react");
+//here both the functions are doing the same things but the second function is more optimized way of representation
+   
+    //editing
+    const secondlang = document.querySelector("li:nth-child(2)")
+    //secondlang.innerHTML="c#"
+    const newli=document.createElement('li')
+    newli.textContent="csharp"
+    secondlang.replaceWith(newli)
+    //editing
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.outerHTML="<li>TypeScript</li>"
+
+    //remove
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove();
+
+</script>
+</html>
