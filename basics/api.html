@@ -1,0 +1,38 @@
+<!-- API stands for Application Programming Interface. It acts as a communicator between different software programs, allowing them to interact and exchange data. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: navy;">
+ /*Value State	Description
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+*/
+</body>
+<script>
+    const request='https://api.github.com/users/suyogzz78'//this is the api of my github
+
+    const xhr=new XMLHttpRequest();
+    xhr.open('GET',request)
+    xhr.onreadystatechange=function()
+    {
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4)
+            {
+                console.log(this.responseText)
+                const suyogdata=JSON.parse(this.responseText)
+                console.log(suyogdata.following)
+                console.log(suyogdata.avatar_url)
+            }
+
+
+    }
+    xhr.send()
+</script>
+</html>
